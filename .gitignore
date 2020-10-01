@@ -1,1 +1,4 @@
 minishell
+libft.so
+*.o
+Makefile.back

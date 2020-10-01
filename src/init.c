@@ -6,7 +6,7 @@ void init_history(){
 
 void add_history(char* cmd){
     int id = h_list.size>-1 ? h_list.cmds[h_list.size]->id +1:0;
-    History* newCMD=malloc(ALLOC(strlen(cmd)));
+    History* newCMD=malloc(ALLOC(ft_strlen(cmd)));
     newCMD->id=id;
     newCMD->cmd=cmd;
     h_list.cmds[++h_list.size]=newCMD;

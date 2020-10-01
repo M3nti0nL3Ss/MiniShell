@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
-#include<string.h>
+#include"libft/libft.h"
 
 #define MAXCOM 1000 
 #define MAXLIST 100 
