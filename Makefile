@@ -5,4 +5,4 @@ all:
 optimize:
 	$(CC) -g -Wall -O2 $(TARGET) src/*.c
 clean:
-	$(RM) -rf $(TARGET)
+	$(RM) $(TARGET)
