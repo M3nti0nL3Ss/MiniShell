@@ -13,6 +13,6 @@ optimize:
 	$(CC) -c -fPIC libft/ft_strlen.c -o ft_strlen.o
 	$(CC) -shared -o libft/libft.so  *.o  -lm
 	$(RM) *.o
-	$(CC) -I. -L$(PWD) -g -Wall -o $(TARGET) src/*.c -lft -O2
+	$(CC) -I. -L$(PWD) -Wl,-rpath,$(PWD) -g -Wall -o $(TARGET) src/*.c -lft -O2
 clean:
 	$(RM) $(TARGET) libft.so
