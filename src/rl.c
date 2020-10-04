@@ -10,5 +10,5 @@ int takeInput(char* str) {
         add_history(buf);
         ft_strcpy(str, buf); 
         return 0; 
-    } else return 1; 
+    } else return 1;
 }
